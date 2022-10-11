@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
 </head>
+
 <body>
-    <h1>Formulário</h1>
+    <header>
+        <nav class="menu" id="menu_horizontal">
+            <ul>
+                <li>
+                    <a href="index.html">Questionário</a>
+                </li>
+                <li>
+                    <a href="#">Formulário 1</a>
+                </li>
+                <li>
+                    <a href="formulario2.html">Formulário 2</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formulario1">
+        <h1>Formulário</h1>
 
-    <form method="get">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="idNome">Nome</label>
-            <input type="text" name="nome" id="idnome"             
-                    placeholder="Digite seu nome">
-            <input type="submit" value="Enviar"> 
+        <form class="form1" method="get">
+            <label for="idNome">Nome:</label>
+            <input type="text" name="nome" id="idnome" placeholder="Digite seu nome">
+            <br>
 
+            <label for="idNome">Data de Nascimnento:</label>
+            <input type="date" name="nome" id="idnome">
+            <br>
+
+            <label for="idSexo">Sexo:</label>
             <input type="radio" name="genero" value="M" id="idmasc">
             <label for="idmasc">Masculino</label>
-
             <input type="radio" name="genero" value="F" id="idfem">
             <label for="idfem">Feminino</label>
-
             <input type="radio" name="genero" value="N" id="Nao">
-            <label for="idnao">Não declarado</label>
-        </fieldset>
-       
-    </form>
-    
+            <label for="idnao">Prefiro não informar</label>
+            <br>
+
+            <label for="">Endereço</label><br>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" name="logradouro" id="logradouro"><br>
+            <label for="bairo">Bairro:</label>
+            <input type="text" name="bairro" id="bairro"><br>
+            <label for="bairo">Cidade:</label>
+            <input type="text" name="cidade" id="cidade"><br>
+            <label for="bairo">UF:</label>
+            <select name="uf" id="uf" form="">
+                <option value="df">DF</option>
+                <option value="go">GO</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+            </select>
+            <br>
+
+            <label for="idNome">E-mail:</label>
+            <input type="email" name="email" id="email"><br>
+
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
+
 </html>

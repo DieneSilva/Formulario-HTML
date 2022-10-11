@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Questionário</title>
 </head>
 <body>
-    <h1>Formulário</h1>
+    <header>
+        <nav class="menu" id="menu_horizontal">
+            <ul>
+                <li>
+                    <a href="#">Questionário</a>
+                </li>
+                <li>
+                    <a href="formulario.html">Formulário 1</a>
+                </li>
+                <li>
+                    <a href="formulario2.html">Formulário 2</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="questionario">
+        <h1>Questionário</h1>
+        <p><b>A)</b> Na tag &lt; input &gt; com atributo type="text", para que serve o atributo "placeholder"?</p>
+    </div>
 
-    <form method="get">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="idNome">Nome</label>
-            <input type="text" name="nome" id="idNome" 
-                    placeholder="Digite seu nome">
-            <input type="submit" value="Enviar"> 
-
-            <input type="radio" name="genero" value="M" id="idMasc">
-            <label for="idMasc">Masculino</label>
-
-            <input type="radio" name="genero" value="F" id="idFem"
-            <label for="idFem">Feminino</label>
-
-            <input type="radio" name="genero" value="N" id="Nao">
-            <label for="idNao">Nao declarado</label>
-
-        </fieldset>
-       
-    </form>
     
 </body>
 </html>
